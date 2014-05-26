@@ -1,0 +1,4 @@
+pygments: true
+github: [Repository metadata]
+safe: true
+lsi: false
