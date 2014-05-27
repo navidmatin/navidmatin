@@ -5,15 +5,18 @@
     </head>
   <body>
   	<div class="site-wrapper" >
-  	{% include nav.html %}
-	  	<div class="site-wrapper-inner" style="display:none">
-	  		<div ckass="cover-container">
-		 	{{ content }}
+  	
+	  	<div class="site-wrapper-inner">
+	  		<div class="cover-container">
+  			  	{% include nav.html %}
+		  		<div class="inner cover" style="display:none" id="main-body">
+			 		{{ content }}
+			 	</div>
 		 	</div>
 	 	</div>
  	</div>
  	<script>
- 	$('.site-wrapper-inner').fadeIn(1000);
+ 	$('#main-body').fadeIn(1000);
  	</script>
   </body>
 </html>

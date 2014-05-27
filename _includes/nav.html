@@ -21,11 +21,14 @@
 
  
     </nav>-->
-    <nav>
-              <ul class="nav masthead-nav">
-            <li {% if page.slug == "about" %} class="active"{% endif %}><a href="/">About</a></li>
-            <li {% if page.slug == "resume" %} class="active"{% endif %}><a href="/resume">Resume</a></li>
-            <li {% if page.slug == "apps" %} class="active"{% endif %}><a href="/apps">Mobile Apps</a></li>
-            <li {% if page.slug == "contact" %} class="active"{% endif %}><a href="/contact">Contact Me</a></li>
-          </ul>
-          </nav>
+<nav>
+<div class="masthead clearfix">
+<h3 class="masthead-brand">Navid SeyedMatin</h3>
+  <ul class="nav masthead-nav">
+    <li {% if page.slug == "about" %} class="active"{% endif %}><a href="/">About</a></li>
+    <li {% if page.slug == "resume" %} class="active"{% endif %}><a href="/resume">Resume</a></li>
+    <li {% if page.slug == "apps" %} class="active"{% endif %}><a href="/apps">Mobile Apps</a></li>
+    <li {% if page.slug == "contact" %} class="active"{% endif %}><a href="/contact">Contact Me</a></li>
+  </ul>
+  </div>
+</nav>

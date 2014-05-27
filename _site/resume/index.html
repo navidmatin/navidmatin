@@ -25,7 +25,10 @@
     </head>
   <body>
   	<div class="site-wrapper" >
-  	<!--<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  	
+	  	<div class="site-wrapper-inner">
+	  		<div class="cover-container">
+  			  	<!--<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -48,22 +51,26 @@
 
  
     </nav>-->
-    <nav>
-              <ul class="nav masthead-nav">
-            <li ><a href="/">About</a></li>
-            <li  class="active"><a href="/resume">Resume</a></li>
-            <li ><a href="/apps">Mobile Apps</a></li>
-            <li ><a href="/contact">Contact Me</a></li>
-          </ul>
-          </nav>
-	  	<div class="site-wrapper-inner" style="display:none">
-	  		<div ckass="cover-container">
-		 	<h2>Resume</h2>
+<nav>
+<div class="masthead clearfix">
+<h3 class="masthead-brand">Navid SeyedMatin</h3>
+  <ul class="nav masthead-nav">
+    <li ><a href="/">About</a></li>
+    <li  class="active"><a href="/resume">Resume</a></li>
+    <li ><a href="/apps">Mobile Apps</a></li>
+    <li ><a href="/contact">Contact Me</a></li>
+  </ul>
+  </div>
+</nav>
+
+		  		<div class="inner cover" style="display:none" id="main-body">
+			 		<h2>Resume</h2>
+			 	</div>
 		 	</div>
 	 	</div>
  	</div>
  	<script>
- 	$('.site-wrapper-inner').fadeIn(1000);
+ 	$('#main-body').fadeIn(1000);
  	</script>
   </body>
 </html>
