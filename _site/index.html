@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-    	<title>Navid Matin Test Website</title>
+    	<title>Home</title>
    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8" />       
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -53,7 +53,7 @@
     </nav>-->
 <nav>
 <div class="masthead clearfix">
-<h3 class="masthead-brand">Navid SeyedMatin</h3>
+<h3 class="masthead-brand">Navid SeyedMatin\<span id="title"></span> </h3>
   <ul class="nav masthead-nav">
     <li  class="active"><a href="/">About</a></li>
     <li ><a href="/resume">Resume</a></li>
@@ -63,15 +63,44 @@
   </div>
 </nav>
 
+
 		  		<div class="inner cover" style="display:none" id="main-body">
-			 			<h2>Welcome!</h2>
+			 		<div class="text-center">
+<h1>Welcome!
+<br />
+<small>I am a Senior CSE student at <a href="http://www.osu.edu">The Ohio State University</a>.
+
+I'm mostly interested in web and mobile applications</small></h1>
+</div>
 
 			 	</div>
 		 	</div>
 	 	</div>
  	</div>
- 	<script>
- 	$('#main-body').fadeIn(1000);
- 	</script>
+ 	<script src="/assets/js/typed.js"></script>
+<script>
+$(function(){
+  $('#title').typed({
+    strings: ['Home'],
+    typeSpeed: 20,
+    callback: function() {
+ 		$('#main-body').fadeIn(1000); 
+    }
+  });
+  $('#cursor').bind('fade-cycle', function() {
+      $(this).fadeOut('fast', function() {
+          $(this).fadeIn('fast', function() {
+              $(this).trigger('fade-cycle');
+          });
+      });
+  });
+  $('#cursor').each(function(index, elem) {
+      setTimeout(function() {
+          $(elem).trigger('fade-cycle');
+      }, index * 250);
+  });
+})
+</script>
+
   </body>
 </html>

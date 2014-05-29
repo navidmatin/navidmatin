@@ -53,7 +53,7 @@
     </nav>-->
 <nav>
 <div class="masthead clearfix">
-<h3 class="masthead-brand">Navid SeyedMatin</h3>
+<h3 class="masthead-brand">Navid SeyedMatin\<span id="title"></span> </h3>
   <ul class="nav masthead-nav">
     <li ><a href="/">About</a></li>
     <li ><a href="/resume">Resume</a></li>
@@ -63,14 +63,37 @@
   </div>
 </nav>
 
+
 		  		<div class="inner cover" style="display:none" id="main-body">
-			 		<h2>Contact Me</h2>
+			 		
 			 	</div>
 		 	</div>
 	 	</div>
  	</div>
- 	<script>
- 	$('#main-body').fadeIn(1000);
- 	</script>
+ 	<script src="/assets/js/typed.js"></script>
+<script>
+$(function(){
+  $('#title').typed({
+    strings: ['Contact Me'],
+    typeSpeed: 20,
+    callback: function() {
+ 		$('#main-body').fadeIn(1000); 
+    }
+  });
+  $('#cursor').bind('fade-cycle', function() {
+      $(this).fadeOut('fast', function() {
+          $(this).fadeIn('fast', function() {
+              $(this).trigger('fade-cycle');
+          });
+      });
+  });
+  $('#cursor').each(function(index, elem) {
+      setTimeout(function() {
+          $(elem).trigger('fade-cycle');
+      }, index * 250);
+  });
+})
+</script>
+
   </body>
 </html>

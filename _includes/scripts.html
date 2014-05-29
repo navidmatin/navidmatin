@@ -1,0 +1,24 @@
+<script src="/assets/js/typed.js"></script>
+<script>
+$(function(){
+  $('#title').typed({
+    strings: ['{{ page.title }}'],
+    typeSpeed: 20,
+    callback: function() {
+ 		$('#main-body').fadeIn(1000); 
+    }
+  });
+  $('#cursor').bind('fade-cycle', function() {
+      $(this).fadeOut('fast', function() {
+          $(this).fadeIn('fast', function() {
+              $(this).trigger('fade-cycle');
+          });
+      });
+  });
+  $('#cursor').each(function(index, elem) {
+      setTimeout(function() {
+          $(elem).trigger('fade-cycle');
+      }, index * 250);
+  });
+})
+</script>
