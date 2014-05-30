@@ -10,6 +10,7 @@
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+  
 
 	<!-- Latest compiled and minified JavaScript -->	
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
@@ -24,8 +25,7 @@
   <link href="/assets/css/cover.css" rel="stylesheet">
     </head>
   <body>
-  	<div class="site-wrapper" >
-  	
+  	<div class="site-wrapper" > 	
 	  	<div class="site-wrapper-inner">
 	  		<div class="cover-container">
   			  	<!--<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -66,28 +66,8 @@
 
 		  		<div class="inner cover" style="display:none" id="main-body">
 		  		<div class="mainbody">
-			 		    <ul class="nav nav-tabs" id="resume">
-        <li class="active"><a class="education" href="#education" data-toggle="tab">Education</a></li>
-        <li><a class="job" href="#job" data-toggle="tab">Job Experience</a></li>
-        <li><a class="projects" href="#projects" data-toggle="tab">Projects</a></li>
-        <li><a class="linkedin" href="#linkedin" data-toggle="tab">LinkedIn</a></li>
-    </ul>
-    <div class="tab-content">
-        <div class="tab-pane fade in active" id="education">
-            
-        </div>
-        <div class="tab-pane fade" id="job">
-            
-        </div>
-        <div class="tab-pane fade" id="projects">
-            
-        </div>
-        <div class="tab-pane fade" id="linkedin">
-            <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-<script type="IN/MemberProfile" data-id="http://www.linkedin.com/in/navidseyedmatin" data-format="inline" data-related="false"></script>
-        </div>
-    </div>
-
+			 		  <a href="overview">Overview</a>
+  <a href="detail">Detail</a>
     <script>
     $('.projects').click($.get("/projects.txt", function(data) {
     	$("#projects").html(data);
@@ -123,5 +103,5 @@ $(function(){
 })
 </script>
 
-  </body>
+
 </html>
