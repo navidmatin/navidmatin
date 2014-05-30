@@ -135,7 +135,9 @@ body {
   .masthead {
     position: fixed;
     top: 0;
-    background-color: #333;
+    background: rgb(51,51,51); /*Fall back for old browsers*/
+    background-color: rgba(51,51,51,.5);
+    filter:alpha(opacity=20);
     z-index: +1;
   }
   .mastfoot {
@@ -181,4 +183,7 @@ body {
 }
 .well> h1 {
   color:#2A4E6C;
+}
+.mainbody {
+  padding-top:5%;
 }
