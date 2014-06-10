@@ -70,6 +70,8 @@ nav {
 .masthead-brand {
   margin-top: 20px;
   margin-bottom: 20px;
+  padding-left: 12.5%;
+  float:left;
 }
 
 .masthead-nav > li {
@@ -92,6 +94,7 @@ nav {
   background-color: transparent;
   border-bottom-color: rgba(255,255,255,.50);
 }
+
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
 .masthead-nav > .active > a:focus {
@@ -107,8 +110,32 @@ nav {
     float: right;
   }
 }
-
-
+.dropdown-menu
+{
+  color: #fff;
+  background: transparent;
+}
+.dropdown-menu>li>a,
+.dropdown-menu>li>a:focus{
+  background-image: none;
+  padding-right: 0;
+  padding: 3px 20px;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border:none;
+  }
+.dropdown-menu>li>a:hover{
+  background-image: none;
+  background-color: transparent;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.85);
+  border-bottom: 2px solid transparent;
+  border-width: auto - 5px;
+  border-bottom-color: #fff;
+}
 /*
  * Cover
  */
@@ -189,4 +216,13 @@ nav {
 }
 .mainbody {
   padding-top:5%;
+}
+.nav-dropdown{
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
 }

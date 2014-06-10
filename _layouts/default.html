@@ -4,13 +4,15 @@
     {% include head.html %}
     </head>
   <body>
+  <div class="nav">
+		{% include nav.html %}
+		</div >
   	<div class="site-wrapper" > 	
 	  	<div class="site-wrapper-inner">
 	  		<div class="cover-container">
-  			  	{% include nav.html %}
 		  		<div class="inner cover" style="display:none" id="main-body">
-		  		<div class="mainbody">
-			 		{{ content }}
+		  			<div class="mainbody">
+			 			{{ content }}
 			 		</div>
 			 	</div>
 		 	</div>

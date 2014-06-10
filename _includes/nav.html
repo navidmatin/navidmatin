@@ -26,7 +26,16 @@
 <h3 class="masthead-brand">Navid SeyedMatin\<span id="title"></span> </h3>
   <ul class="nav masthead-nav">
     <li {% if page.slug == "about" %} class="active"{% endif %}><a href="/">About</a></li>
-    <li {% if page.slug == "resume" %} class="active"{% endif %}><a href="/resume">Resume</a></li>
+    <li {% if page.slug == "resume" %} class="active"{% endif %}>
+    <a href="#" data-toggle="dropdown">
+      Resume <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="/resume/overview">Resume Overview</a></li>
+      <li><a href="/resume/detail">Resume Detail</a></li>
+    </ul>
+</li>
+    <!--<li {% if page.slug == "resume" %} class="active"{% endif %}><a href="/resume">Resume</a></li>-->
     <li {% if page.slug == "apps" %} class="active"{% endif %}><a href="/apps">Mobile Apps</a></li>
     <li {% if page.slug == "contact" %} class="active"{% endif %}><a href="/contact">Contact Me</a></li>
   </ul>

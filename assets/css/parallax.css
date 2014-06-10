@@ -71,13 +71,6 @@ main {
     height: 100%;
     width: 100%;
 }
-.masthead-brand {
-    float: left;
-    padding-left: 12.5%;
-  }
-  .masthead-nav {
-    float: right;
-  }
 /* Slide 1 */
 #slide-1 .bcg {background-image:url('../img/bcg_slide-1.jpg')}
 
