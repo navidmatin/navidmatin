@@ -7,10 +7,12 @@
 	<head>
     {% include head.html %}
     </head>
-  <body class="loading">
+  <body>
   		<div class="nav">
 		{% include nav.html %}
 		</div >
- 	{{ content }}
- 	{% include scripts.html %}
+		<div  class="loading">
+ 		{{ content }}
+ 		{% include scripts.html %}
+ 	</div>
 </html>

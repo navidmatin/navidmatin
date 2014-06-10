@@ -175,7 +175,7 @@ border-color: rgba(255,255,255,.50);
   .masthead {
     position: fixed;
     top: 0;
-    z-index: +10;
+    z-index: +1000;
   }
   .mastfoot {
     position: fixed;

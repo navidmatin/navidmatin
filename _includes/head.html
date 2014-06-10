@@ -2,12 +2,14 @@
    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8" />       
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
     <!-- Latest compiled and minified CSS -->
+      {% if page.slug == "resume/overview" %} <link rel="stylesheet" href="/assets/css/parallax.css"> {% endif %}
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-  {% if page.slug == "resume/overview" %} <link rel="stylesheet" href="/assets/css/parallax.css"> {% endif %}
+
 
 	<!-- Latest compiled and minified JavaScript -->	
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
