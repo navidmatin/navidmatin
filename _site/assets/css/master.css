@@ -169,7 +169,7 @@ border-color: rgba(255,255,255,.50);
  * Affix and center
  */
 
-@media (min-width: 108px) {
+@media screen and (max-width: 768px) {
   /* Pull out the header and footer */
   .masthead {
     position: fixed;
