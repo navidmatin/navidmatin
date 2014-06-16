@@ -11,15 +11,14 @@ base_url: "/"
         <li><a class="projects" href="#projects" data-toggle="tab">Projects</a></li>
         <li><a class="linkedin" href="#linkedin" data-toggle="tab">LinkedIn</a></li>
     </ul>
-    </br>
     <div class="tab-content">
         <div class="tab-pane fade in active" id="education">
+        </br>
             <div class="list-group" id="item1">
-                 <a data-toggle="collapse" data-parent="#item1" href="#osu" class="list-group-item accordion-toggle current">
+                 <a data-toggle="collapse" data-parent="#item1" href="#first" class="list-group-item accordion-toggle">
                  <h3 class="list-group-item-heading">The Ohio State University</h3>
-                 <p class="list-group-item-text"> <em>Columbus</em>, <em>Ohio</em> <br /> Graduating December 2014</p>
-                 <div id="osu" class="collapse">
-                 <hr/>
+                 <p class="list-group-item-text text-muted"> <em>Columbus</em>, <em>Ohio</em> <br /> Graduating December 2014</p>
+                 <div id="first" class="collapse">
                     <p><strong> Computer Science &amp; Engineering</strong></p>
      
                     <h6> Related CourseWork: 
@@ -30,83 +29,113 @@ base_url: "/"
                  
             </div>
             <div class="list-group" id="item2">
-                 <a data-toggle="collapse" data-parent="#item2" href="#cstate" class="list-group-item accordion-toggle">
+                 <a data-toggle="collapse" data-parent="#item2" href="#first" class="list-group-item accordion-toggle">
                  <h3 class="list-group-item-heading">Cincinnati State Technical and Community College</h3>
-                 <p class="list-group-item-text"> <em>Cincinnati</em>, <em>Ohio</em> <br /> Graduated Spring 2011</p>
-                 <div id="cstate" class="collapse">
-                 <hr/>
-                   <p><strong> Associate of Science (Transfer Program)</strong></p>
+                 <p class="list-group-item-text text-muted"> <em>Cincinnati</em>, <em>Ohio</em> <br /> Graduating December 2014</p>
+                 <div id="first" class="collapse">
+                    <p><strong> Computer Science &amp; Engineering</strong></p>
+     
+                    <h6> Related CourseWork: 
+                    Project: Interactive Systems, Project: Web Development, Software Eng-Proj Management, Operating Systems, Mobile Applications, Computer Game Animations 
+                    </h6>
                 </div>
                  </a>
                  
             </div>
+        <div   class="panel panel-default"                              >
+  <div class="panel-heading"><h3>Cincinnati State Technical and Community College</h3></div>
+  <div class="panel-body">
+       <h6 class="text-muted"><em>Cincinnati</em> ,
+
+            <em>Ohio</em></h6> 
+   <p><strong> Associate of Science (Transfer Program)</strong></p>
+       
+       
+           <p> <strong>Graduated:</strong> Spring 2011 </p>
+     
+  </div>
+</div>
 
 
         </div>
         <div class="tab-pane fade" id="job">
-            <div class="list-group" id="item3">
-                 <a data-toggle="collapse" data-parent="#item3" href="#hrtech" class="list-group-item accordion-toggle">
-                     <h3 class="list-group-item-heading ">HR Technology (The Ohio State University)</h3>
-                     <p class="list-group-item-text"> <em>Columbus</em>, <em>Ohio</em> <br /> <strong>Student Web Developer (Nov 13 - present)<br/>HRITS Student Associate (Jun 12 - Nov 13)</strong></p>
-                     <div id="hrtech" class="collapse">
-                     <hr/>
-                        <h5><strong>Student Web Developer</strong></h5>
-         
-                        <h6><em>November 2013 - Present</em></h6>
-                <ul>
-                        <li>Doing web updates, and creating new web pages</li>
-                        <li>Helping with developing web applications</li>
-                        <li>Helping with Ohio State Human Resource Website redesign</li>
-                </ul>
-                    <hr />
-                    <h5><strong>HRITS Student Associate</strong></h5>
-                <h6><em>June 2012 -
-    December 2013</em></h6>
-                <ul>
-                        <li>Doing web updates, and creating new web pages</li>
-                        <li>Helping with developing web applications</li>
-                        <li>Troubleshooting general hardware and software problems</li>
-                        <li>Account management with help of Active Directory, and Exchange Management</li>
-                        <li>Project: Help Desk Tracking System, C# ASP .NET, MVC </li>
-                </ul>
-                </div>
-             </a>
-                 
-            </div>
-<div class="list-group" id="item4">
-                 <a data-toggle="collapse" data-parent="#item4" href="#ms" class="list-group-item accordion-toggle">
-                 <h3 class="list-group-item-heading">National MS Society</h3>
-                 <p class="list-group-item-text"> <em>Cincinnati</em>, <em>Ohio</em> <br/><strong>Intern (Sep 11 - Jan 12)</strong></p>
-                 <div id="ms" class="collapse">
-                 <hr/>
-                 <h5><strong>Intern</strong></h5>
-                  <h6><em>September 2011 -
+            
+</br>
+    <div               class="panel panel-primary">
+  <div class="panel-heading"><h3>HR Technology (The Ohio State University)</h3></div>
+  <div class="panel-body">
+    <h5><strong>Student Web Developer</strong></h5>
+            <h6 class="text-muted"><em>Columbus</em> ,
+
+            <em>Ohio</em></h6> 
+            <h6><em>November 2013 -
+                Present
+</em></h6>
+            <ul>
+                    <li>Doing web updates, and creating new web pages</li>
+                    <li>Helping with developing web applications</li>
+                    <li>Helping with Ohio State Human Resource &lt;a href=&#39;http://hr.osu.edu&#39;&gt;Website&lt;/href&gt; redesign</li>
+            </ul>
+
+  </div>
+</div>
+    <div                class="panel panel-default">
+  <div class="panel-heading"><h3>HRIT (The Ohio State University)</h3></div>
+  <div class="panel-body">
+    <h5><strong>HRITS Student Associate</strong></h5>
+            <h6 class="text-muted"><em>Columbus</em> ,
+
+            <em>Ohio</em></h6> 
+            <h6><em>June 2012 -
+December 2013</em></h6>
+            <ul>
+                    <li>Doing web updates, and creating new web pages</li>
+                    <li>Helping with developing web applications</li>
+                    <li>Troubleshooting general hardware and software problems</li>
+                    <li>Account management with help of Active Directory, and Exchange Management</li>
+                    <li>Project: Help Desk Tracking System, C# ASP .NET, MVC </li>
+            </ul>
+
+  </div>
+</div>
+    <div                class="panel panel-default">
+  <div class="panel-heading"><h3>National MS Society</h3></div>
+  <div class="panel-body">
+    <h5><strong>Intern</strong></h5>
+            <h6 class="text-muted"><em> Cincinnati</em> ,
+
+            <em>Ohio</em></h6> 
+            <h6><em>September 2011 -
 January 2012</em></h6>
             <ul>
                     <li>Helped at the office, and data entry</li>
             </ul>
-                </div>
-                 </a>
-                 
-            </div>
 
-            <div class="list-group" id="item5">
-                 <a data-toggle="collapse" data-parent="#item5" href="#cstatetutor" class="list-group-item accordion-toggle">
-                 <h3 class="list-group-item-heading">Cincinnati State Technical &amp; Community College</h3>
-                 <p class="list-group-item-text"> <em>Cincinnati</em>, <em>Ohio</em> <br/><strong>Math Tutor (Sep 09 - Jan 10)</strong></p>
-                 <div id="cstatetutor" class="collapse">
-                 <hr/>
-                   <h5><strong>Math Tutor</strong></h5>
+  </div>
+</div>
+    <div                class="panel panel-default">
+  <div class="panel-heading"><h3>Cincinnati State Technical &amp; Community College</h3></div>
+  <div class="panel-body">
+    <h5><strong>Math Tutor</strong></h5>
+            <h6 class="text-muted"><em>Cincinnati</em> ,
+
+            <em>Ohio</em></h6> 
             <h6><em>September 2009 -
 January 2010</em></h6>
             <ul>
                     <li>Helped students with in Algebra and calculus 1 math</li>
             </ul>
 
-                </div>
-                 </a>
-                 
-            </div>
+  </div>
+</div>
+     
+       
+       
+            <sub>
+               
+            </sub>
+       
+
 
         </div>
         <div class="tab-pane fade" id="projects">

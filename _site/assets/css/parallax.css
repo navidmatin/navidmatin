@@ -404,3 +404,7 @@ main {
         page-break-after: avoid;
     }
 }
+/*removing background of the nav bar */
+.masthead {
+    background-color: transparent !important;
+}
