@@ -169,7 +169,7 @@ border-color: rgba(255,255,255,.50);
  * Affix and center
  */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 860px) {
   /* Pull out the header and footer */
   .masthead {
     position: fixed;
@@ -193,9 +193,12 @@ border-color: rgba(255,255,255,.50);
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
+  .masthead-nav {
+    display: none;
+  }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .masthead,
   .mastfoot,
   .cover-container {
