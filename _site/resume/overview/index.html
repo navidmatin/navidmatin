@@ -29,7 +29,7 @@
     <![endif]-->
 
   <link href="/assets/css/master.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="/assets/css/jquery.sidr.dark.css">
     </head>
   <body>
   		<div class="nav">
@@ -59,7 +59,8 @@
 <nav>
 <div class="masthead clearfix">
 <h3 class="masthead-brand">Navid SeyedMatin\<span id="title"></span> </h3>
-  <ul class="nav masthead-nav">
+
+  <ul class="nav masthead-nav visible-md visible-lg">
     <li ><a href="/">About</a></li>
     <li >
     <a href="#" data-toggle="dropdown">
@@ -74,6 +75,15 @@
     <li ><a href="/apps">Mobile Apps</a></li>
     <li ><a href="/contact">Contact Me</a></li>
   </ul>
+  <div class="container">
+  <ul class="nav masthead-nav visible-xs visible-sm text-right">
+    <li>
+      <a id="responsive-menu-button" href="#sidr-main">
+          <span class="glyphicon glyphicon-list-alt"></span>
+        </a>
+    </li>
+  </ul>
+  </div>
   </div>
 </nav>
 
@@ -204,6 +214,7 @@
 </section>
 </main>
  		<script src="/assets/js/typed.js"></script>
+<script src="/assets/js/jquery.sidr.min.js"></script>
 <script>
 $(function(){
   $('#title').typed({
@@ -225,6 +236,15 @@ $(function(){
           $(elem).trigger('fade-cycle');
       }, index * 250);
   });
+  $('#responsive-menu-button').sidr({
+      name: 'sidr-right',
+      side: 'right'
+    });
+  $(window).resize(function () { $.sidr('close', 'sidr-right'); });
+          $("body").click(function(){
+               $.sidr('close', 'sidr-right');
+          });
+
 })
 </script>
 

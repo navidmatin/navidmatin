@@ -1,4 +1,5 @@
 <script src="/assets/js/typed.js"></script>
+<script src="/assets/js/jquery.sidr.min.js"></script>
 <script>
 $(function(){
   $('#title').typed({
@@ -20,6 +21,15 @@ $(function(){
           $(elem).trigger('fade-cycle');
       }, index * 250);
   });
+  $('#responsive-menu-button').sidr({
+      name: 'sidr-right',
+      side: 'right'
+    });
+  $(window).resize(function () { $.sidr('close', 'sidr-right'); });
+          $("body").click(function(){
+               $.sidr('close', 'sidr-right');
+          });
+
 })
 </script>
 {% if page.slug == "resume/overview" %}

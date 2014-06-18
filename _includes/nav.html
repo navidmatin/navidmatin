@@ -24,7 +24,8 @@
 <nav>
 <div class="masthead clearfix">
 <h3 class="masthead-brand">Navid SeyedMatin\<span id="title"></span> </h3>
-  <ul class="nav masthead-nav">
+
+  <ul class="nav masthead-nav visible-md visible-lg">
     <li {% if page.slug == "about" %} class="active"{% endif %}><a href="/">About</a></li>
     <li {% if page.slug == "resume" %} class="active"{% endif %}>
     <a href="#" data-toggle="dropdown">
@@ -39,6 +40,15 @@
     <li {% if page.slug == "apps" %} class="active"{% endif %}><a href="/apps">Mobile Apps</a></li>
     <li {% if page.slug == "contact" %} class="active"{% endif %}><a href="/contact">Contact Me</a></li>
   </ul>
+  <div class="container">
+  <ul class="nav masthead-nav visible-xs visible-sm text-right">
+    <li>
+      <a id="responsive-menu-button" href="#sidr-main">
+          <span class="glyphicon glyphicon-list-alt"></span>
+        </a>
+    </li>
+  </ul>
+  </div>
   </div>
 </nav>
 
