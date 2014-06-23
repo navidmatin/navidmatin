@@ -94,11 +94,24 @@
 							<div class="sidr-inner">
 							  <!-- Your content -->
 							  <ul class="sidr-class-nav sidr-class-navbar-nav">
-							    <li><a href="#">List 1</a></li>
-							    <li class="active"><a href="#">List 2</a></li>
-							    <li><a href="#">List 3</a></li>
+							    <li ><a href="/">About</a></li>
+    <li  class="active">
+    <a href="#resume-right" data-toggle="dropdown" id="resume-sidr-button">
+      Resume
+    </a>
+</li>
+    <!--<li  class="active"><a href="/resume">Resume</a></li>-->
+    <li ><a href="/apps">Mobile Apps</a></li>
+    <li ><a href="/contact">Contact Me</a></li>
 							  </ul>
 							  </div>
+							</div>
+							<div id="resume-right" class="sidr right">
+							<ul class="sidr-class-nav sidr-class-navbar-nav">
+								<li><a href="/resume/overview">Overview</a></li>
+      							<li><a href="/resume/detail">Detail</a></li>
+      							<li><a href="#sidr-right" id="back-to-nav-button">Back</a>
+							</ul>
 							</div>
 			 			  <a href="overview">Overview</a>
   <a href="detail">Detail</a>
@@ -136,6 +149,14 @@ $(function(){
       }, index * 250);
   });
   $('#responsive-menu-button').sidr({
+      name: 'sidr-right',
+      side: 'right'
+    });
+   $('#resume-sidr-button').sidr({
+      name: 'resume-right',
+      side: 'right'
+    });
+   $('#back-to-nav-button').sidr({
       name: 'sidr-right',
       side: 'right'
     });
