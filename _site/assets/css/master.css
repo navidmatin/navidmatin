@@ -300,6 +300,9 @@ a.list-group-item .list-group-item-text {
 .current{
   background-color:#A1554B;
 }
+.list-group-item.accordion-toggle.current:hover{
+  background-color:#b87067;
+}
 .box {
   border-bottom-right-radius:5px;
 border-bottom-left-radius: 5px; 

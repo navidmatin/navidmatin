@@ -27,6 +27,7 @@
 
   <ul class="nav masthead-nav visible-md visible-lg">
     <li {% if page.slug == "about" %} class="active"{% endif %}><a href="/">About</a></li>
+    <!--
     <li {% if page.slug == "resume" %} class="active"{% endif %}>
     <a href="#" data-toggle="dropdown">
       Resume <span class="caret"></span>
@@ -35,8 +36,8 @@
       <li><a href="/resume/overview">Overview</a></li>
       <li><a href="/resume/detail">Detail</a></li>
     </ul>
-</li>
-    <!--<li {% if page.slug == "resume" %} class="active"{% endif %}><a href="/resume">Resume</a></li>-->
+</li>-->
+    <li {% if page.slug == "resume" %} class="active"{% endif %}><a href="/resume" id="res2">Resume</a></li>
     <li {% if page.slug == "apps" %} class="active"{% endif %}><a href="/apps">Mobile Apps</a></li>
     <li {% if page.slug == "contact" %} class="active"{% endif %}><a href="/contact">Contact Me</a></li>
   </ul>
@@ -51,4 +52,5 @@
   </div>
   </div>
 </nav>
+
 
