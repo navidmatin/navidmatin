@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Resume Detail
+title: Resume
 slug: resume
 base_url: "/"
 ---
@@ -8,185 +8,196 @@ base_url: "/"
     <ul class="nav nav-pills" id="resume">
         <li class="active"><a class="education" href="#education" data-toggle="tab">Education</a></li>
         <li><a class="job" href="#job" data-toggle="tab">Job Experience</a></li>
-        <li><a class="projects" href="#projects" data-toggle="tab">Projects</a></li>
-        <li><a class="linkedin" href="#linkedin" data-toggle="tab">LinkedIn</a></li>
-    </ul>
-    </br>
-    <div class="tab-content">
-        <div class="tab-pane fade in active" id="education">
-            <div class="list-group" id="item1">
-                 <a data-toggle="collapse" data-parent="#item1" href="#osu" class="list-group-item accordion-toggle current">
-                 <h3 class="list-group-item-heading">The Ohio State University</h3>
-                 <p class="list-group-item-text"> <em>Columbus</em>, <em>Ohio</em> <br /> Graduating December 2014</p>
-                 <div id="osu" class="collapse">
-                 <hr/>
-                    <p><strong> Computer Science &amp; Engineering</strong></p>
-     
-                    <h6> Related CourseWork: 
-                    Project: Interactive Systems, Project: Web Development, Software Eng-Proj Management, Operating Systems, Mobile Applications, Computer Game Animations 
-                    </h6>
-                </div>
-                 </a>
-                 
-            </div>
-            <div class="list-group" id="item2">
-                 <a data-toggle="collapse" data-parent="#item2" href="#cstate" class="list-group-item accordion-toggle">
-                 <h3 class="list-group-item-heading">Cincinnati State Technical and Community College</h3>
-                 <p class="list-group-item-text"> <em>Cincinnati</em>, <em>Ohio</em> <br /> Graduated Spring 2011</p>
-                 <div id="cstate" class="collapse">
-                 <hr/>
-                   <p><strong> Associate of Science (Transfer Program)</strong></p>
-                </div>
-                 </a>
-                 
-            </div>
-
-
-        </div>
-        <div class="tab-pane fade" id="job">
-            <div class="list-group" id="item3">
-                 <a data-toggle="collapse" data-parent="#item3" href="#hrtech" class="list-group-item accordion-toggle">
-                     <h3 class="list-group-item-heading ">HR Technology (The Ohio State University)</h3>
-                     <p class="list-group-item-text"> <em>Columbus</em>, <em>Ohio</em> <br /> <strong>Student Web Developer (Nov 13 - present)<br/>HRITS Student Associate (Jun 12 - Nov 13)</strong></p>
-                     <div id="hrtech" class="collapse">
-                     <hr/>
-                        <h5><strong>Student Web Developer</strong></h5>
+        <li><a class="projects visible-md visible-lg" href="#projects" data-toggle="tab">Projects</a></li>
+        <li><a class="linkedin visible-md visible-lg" href="#linkedin" data-toggle="tab">LinkedIn</a></li>
+        <li><a class="collapse accordion-toggle visible-sm visible-xs" data-toggle="collapse" data-parent="#resume" href="#more" >More</a>
+        
+        <li class="visible-sm visible-xs" role="menu" >
+        <div class="collapse" id="more">
+                <ul class="nav nav-pills">
+                 <li><a class="projects visible-sm visible-xs" href="#projects" data-toggle="tab">Projects</a></li>
+                 <li><a class="linkedin visible-xs visible-sm" href="#linkedin" data-toggle="tab">LinkedIn</a></li> 
+             </ul>
+             </div>
+         </li>
          
-                        <h6><em>November 2013 - Present</em></h6>
-                <ul>
-                        <li>Doing web updates, and creating new web pages</li>
-                        <li>Helping with developing web applications</li>
-                        <li>Helping with Ohio State Human Resource Website redesign</li>
-                </ul>
-                    <hr />
-                    <h5><strong>HRITS Student Associate</strong></h5>
-                <h6><em>June 2012 -
-    December 2013</em></h6>
-                <ul>
-                        <li>Doing web updates, and creating new web pages</li>
-                        <li>Helping with developing web applications</li>
-                        <li>Troubleshooting general hardware and software problems</li>
-                        <li>Account management with help of Active Directory, and Exchange Management</li>
-                        <li>Project: Help Desk Tracking System, C# ASP .NET, MVC </li>
-                </ul>
-                </div>
-             </a>
-                 
+     </ul>
+ </br>
+ <div class="tab-content">
+    <div class="tab-pane fade in active" id="education">
+        <div class="list-group" id="item1">
+           <a data-toggle="collapse" data-parent="#item1" href="#osu" class="list-group-item accordion-toggle current pill-danger">
+               <h3 class="list-group-item-heading">The Ohio State University</h3>
+               <p class="list-group-item-text"> <em>Columbus</em>, <em>Ohio</em> <br /> Graduating December 2014</p>
+               <div id="osu" class="collapse">
+                   <hr/>
+                   <p><strong> Computer Science &amp; Engineering</strong></p>
+
+                   <h6> Related CourseWork: 
+                    Project: Interactive Systems, Project: Web Development, Software Eng-Proj Management, Operating Systems, Mobile Applications, Computer Game Animations 
+                </h6>
             </div>
-<div class="list-group" id="item4">
-                 <a data-toggle="collapse" data-parent="#item4" href="#ms" class="list-group-item accordion-toggle">
-                 <h3 class="list-group-item-heading">National MS Society</h3>
-                 <p class="list-group-item-text"> <em>Cincinnati</em>, <em>Ohio</em> <br/><strong>Intern (Sep 11 - Jan 12)</strong></p>
-                 <div id="ms" class="collapse">
-                 <hr/>
-                 <h5><strong>Intern</strong></h5>
-                  <h6><em>September 2011 -
-January 2012</em></h6>
-            <ul>
+        </a>
+
+    </div>
+    <div class="list-group" id="item2">
+       <a data-toggle="collapse" data-parent="#item2" href="#cstate" class="list-group-item accordion-toggle">
+           <h3 class="list-group-item-heading">Cincinnati State Technical and Community College</h3>
+           <p class="list-group-item-text"> <em>Cincinnati</em>, <em>Ohio</em> <br /> Graduated Spring 2011</p>
+           <div id="cstate" class="collapse">
+               <hr/>
+               <p><strong> Associate of Science (Transfer Program)</strong></p>
+           </div>
+       </a>
+
+   </div>
+
+
+</div>
+<div class="tab-pane fade" id="job">
+    <div class="list-group" id="item3">
+       <a data-toggle="collapse" data-parent="#item3" href="#hrtech" class="list-group-item accordion-toggle">
+           <h3 class="list-group-item-heading ">HR Technology (The Ohio State University)</h3>
+           <p class="list-group-item-text"> <em>Columbus</em>, <em>Ohio</em> <br /> <strong>Student Web Developer (Nov 13 - present)<br/>HRITS Student Associate (Jun 12 - Nov 13)</strong></p>
+           <div id="hrtech" class="collapse">
+               <hr/>
+               <h5><strong>Student Web Developer</strong></h5>
+
+               <h6><em>November 2013 - Present</em></h6>
+               <ul>
+                <li>Doing web updates, and creating new web pages</li>
+                <li>Helping with developing web applications</li>
+                <li>Helping with Ohio State Human Resource Website redesign</li>
+            </ul>
+            <hr />
+            <h5><strong>HRITS Student Associate</strong></h5>
+            <h6><em>June 2012 -
+                December 2013</em></h6>
+                <ul>
+                    <li>Doing web updates, and creating new web pages</li>
+                    <li>Helping with developing web applications</li>
+                    <li>Troubleshooting general hardware and software problems</li>
+                    <li>Account management with help of Active Directory, and Exchange Management</li>
+                    <li>Project: Help Desk Tracking System, C# ASP .NET, MVC </li>
+                </ul>
+            </div>
+        </a>
+
+    </div>
+    <div class="list-group" id="item4">
+       <a data-toggle="collapse" data-parent="#item4" href="#ms" class="list-group-item accordion-toggle">
+           <h3 class="list-group-item-heading">National MS Society</h3>
+           <p class="list-group-item-text"> <em>Cincinnati</em>, <em>Ohio</em> <br/><strong>Intern (Sep 11 - Jan 12)</strong></p>
+           <div id="ms" class="collapse">
+               <hr/>
+               <h5><strong>Intern</strong></h5>
+               <h6><em>September 2011 -
+                January 2012</em></h6>
+                <ul>
                     <li>Helped at the office, and data entry</li>
-            </ul>
-                </div>
-                 </a>
-                 
+                </ul>
             </div>
+        </a>
 
-            <div class="list-group" id="item5">
-                 <a data-toggle="collapse" data-parent="#item5" href="#cstatetutor" class="list-group-item accordion-toggle">
-                 <h3 class="list-group-item-heading">Cincinnati State Technical &amp; Community College</h3>
-                 <p class="list-group-item-text"> <em>Cincinnati</em>, <em>Ohio</em> <br/><strong>Math Tutor (Sep 09 - Jan 10)</strong></p>
-                 <div id="cstatetutor" class="collapse">
-                 <hr/>
-                   <h5><strong>Math Tutor</strong></h5>
-            <h6><em>September 2009 -
-January 2010</em></h6>
-            <ul>
+    </div>
+
+    <div class="list-group" id="item5">
+       <a data-toggle="collapse" data-parent="#item5" href="#cstatetutor" class="list-group-item accordion-toggle">
+           <h3 class="list-group-item-heading">Cincinnati State Technical &amp; Community College</h3>
+           <p class="list-group-item-text"> <em>Cincinnati</em>, <em>Ohio</em> <br/><strong>Math Tutor (Sep 09 - Jan 10)</strong></p>
+           <div id="cstatetutor" class="collapse">
+               <hr/>
+               <h5><strong>Math Tutor</strong></h5>
+               <h6><em>September 2009 -
+                January 2010</em></h6>
+                <ul>
                     <li>Helped students with in Algebra and calculus 1 math</li>
-            </ul>
+                </ul>
 
-                </div>
-                 </a>
-                 
             </div>
+        </a>
 
-        </div>
-        <div class="tab-pane fade" id="projects">
-            <div class="list-group" id="item6">
-                <a data-toggle="collapse" data-parent="#item6" href="#charityweb" class="list-group-item accordion-toggle">
-                <h3 class="list-group-item-heading">Charity website</h3>
-                <p class="list-group-item-text"> <em>2013 WebProject Class</em> <br/>A Ruby on Rails website for the final class project</p>
-                <div id="charityweb" class="collapse">
+    </div>
+
+</div>
+<div class="tab-pane fade" id="projects">
+    <div class="list-group" id="item6">
+        <a data-toggle="collapse" data-parent="#item6" href="#charityweb" class="list-group-item accordion-toggle">
+            <h3 class="list-group-item-heading">Charity website</h3>
+            <p class="list-group-item-text"> <em>2013 WebProject Class</em> <br/>A Ruby on Rails website for the final class project</p>
+            <div id="charityweb" class="collapse">
                 <hr/>
                 <p><em>Programming Language:</em>Ruby on Rails, jQuery, Javascript, CSS, HTML5</p>
                 <p>A website for listing of charity events</p>
-                </div>
-                 </a>               
             </div>
-            <div class="list-group" id="item7">
-                <a data-toggle="collapse" data-parent="#item7" href="#ica" class="list-group-item accordion-toggle">
-                <h3 class="list-group-item-heading">ICA at OSU website redesign <span class="text-muted">(front-end)</span></h3>
-                <p class="list-group-item-text"> <em>Webmaster at Iranian Cultural Association</em> <br/>Website redesign</p>
-                <div id="ica" class="collapse">
+        </a>               
+    </div>
+    <div class="list-group" id="item7">
+        <a data-toggle="collapse" data-parent="#item7" href="#ica" class="list-group-item accordion-toggle">
+            <h3 class="list-group-item-heading">ICA at OSU website redesign <span class="text-muted">(front-end)</span></h3>
+            <p class="list-group-item-text"> <em>Webmaster at Iranian Cultural Association</em> <br/>Website redesign</p>
+            <div id="ica" class="collapse">
                 <hr/>
                 <p><em>Programming Language:</em>Javascript (jQuery), HTML5</p>
                 <p>Designed a new look for the website </p>
-                </div>
-                 </a>
             </div>
-            <div class="list-group" id="item8">
-                <a data-toggle="collapse" data-parent="#item8" href="#helpdesktracking" class="list-group-item accordion-toggle">
-                    <h3 class="list-group-item-heading">Helpdesk Tracking System</h3>
-                    <p class="list-group-item-text"> <em>2013 HRIT(The Ohio State University)</em> <br/>An ASP.NET MVC4 web application to track helpdesk requests.</p>
-                    <div id="helpdesktracking" class="collapse">
-                    <hr/>
-                    <p><em>Programming Language:</em>C#, HTML5 (Razor), Javascript</p>
-                    <h6>Highlights:</h6>
-                    <ul>
-                        <li>Worked with a team of 4 for design and implementation of the project</li>
-                        <li>Worked with live SQL database and server</li>
-                        <li>Used Git as the repository management system</li>
-                        <li>Created sections of the request tracking system (including Models, Controls and Views)</li>
-                        <li>Designed most sections of the homepage</li>
-                        <li>Helped with workflow design and created the workflow charts</li>
-                    </ul>
-                    </div>
-                </a>
-            </div>
-            <div class="list-group" id="item9">
-                <a data-toggle="collapse" data-parent="#item9" href="#projmang" class="list-group-item accordion-toggle">
-                    <h3 class="list-group-item-heading">Infinity Software <span class="text-muted">(Project Management)</span></h3>
-                    <p class="list-group-item-text"> <em>2013 Software Engineering Course</em> <br/>A project management document, including requirements, design and analysis of a possible software project</p>
-                    <div id="projmang" class="collapse">
-                    <hr/>
-                    <p><em>Programming Language:</em>N/A</p>
-                        A Project management class in which we did planning and design of a new (fake) software project </p>
-                    </div>
-                </a>
-            </div>
-            <div class="list-group" id="item9">
-                <a data-toggle="collapse" data-parent="#item9" href="#supermario" class="list-group-item accordion-toggle">
-                    <h3 class="list-group-item-heading">Super Mario Game</h3>
-                    <p class="list-group-item-text"> <em>2012 Professional Software Development Course</em> <br/> 2D game in C# with use of SCRUM development framework and Visual Studio 2012.</p>
-                    <div id="supermario" class="collapse">
-                    <hr/>
-                    <p><em>Programming Language:</em>C#</p>   
-       <h6>Highlights:</h6>
-        <ul>
-            <li>Worked with a team of 4 for implementation of the game</li>
-            <li>Wrote the game on a custom made game engine, and then switched to monogame</li>
-            <li>Used agile development process</li>
-            <li>Worked on collision and some general aspects of the game</li>
-        </ul> 
-                    </div>
-                </a>
-            </div>
-
-
-        </div>
-        <div class="tab-pane fade" id="linkedin">
-        <p>For the most updated version of my resume check out my linkedin profile</p>
-            <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-<script type="IN/MemberProfile" data-id="http://www.linkedin.com/in/navidseyedmatin" data-format="inline" data-related="false"></script>
-        </div>
+        </a>
     </div>
+    <div class="list-group" id="item8">
+        <a data-toggle="collapse" data-parent="#item8" href="#helpdesktracking" class="list-group-item accordion-toggle">
+            <h3 class="list-group-item-heading">Helpdesk Tracking System</h3>
+            <p class="list-group-item-text"> <em>2013 HRIT(The Ohio State University)</em> <br/>An ASP.NET MVC4 web application to track helpdesk requests.</p>
+            <div id="helpdesktracking" class="collapse">
+                <hr/>
+                <p><em>Programming Language:</em>C#, HTML5 (Razor), Javascript</p>
+                <h6>Highlights:</h6>
+                <ul>
+                    <li>Worked with a team of 4 for design and implementation of the project</li>
+                    <li>Worked with live SQL database and server</li>
+                    <li>Used Git as the repository management system</li>
+                    <li>Created sections of the request tracking system (including Models, Controls and Views)</li>
+                    <li>Designed most sections of the homepage</li>
+                    <li>Helped with workflow design and created the workflow charts</li>
+                </ul>
+            </div>
+        </a>
+    </div>
+    <div class="list-group" id="item9">
+        <a data-toggle="collapse" data-parent="#item9" href="#projmang" class="list-group-item accordion-toggle">
+            <h3 class="list-group-item-heading">Infinity Software <span class="text-muted">(Project Management)</span></h3>
+            <p class="list-group-item-text"> <em>2013 Software Engineering Course</em> <br/>A project management document, including requirements, design and analysis of a possible software project</p>
+            <div id="projmang" class="collapse">
+                <hr/>
+                <p><em>Programming Language:</em>N/A</p>
+                A Project management class in which we did planning and design of a new (fake) software project </p>
+            </div>
+        </a>
+    </div>
+    <div class="list-group" id="item9">
+        <a data-toggle="collapse" data-parent="#item9" href="#supermario" class="list-group-item accordion-toggle">
+            <h3 class="list-group-item-heading">Super Mario Game</h3>
+            <p class="list-group-item-text"> <em>2012 Professional Software Development Course</em> <br/> 2D game in C# with use of SCRUM development framework and Visual Studio 2012.</p>
+            <div id="supermario" class="collapse">
+                <hr/>
+                <p><em>Programming Language:</em>C#</p>   
+                <h6>Highlights:</h6>
+                <ul>
+                    <li>Worked with a team of 4 for implementation of the game</li>
+                    <li>Wrote the game on a custom made game engine, and then switched to monogame</li>
+                    <li>Used agile development process</li>
+                    <li>Worked on collision and some general aspects of the game</li>
+                </ul> 
+            </div>
+        </a>
+    </div>
+
+
 </div>
-    </div>
+<div class="tab-pane fade" id="linkedin">
+    <p>For the most updated version of my resume check out my linkedin profile</p>
+    <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+    <script type="IN/MemberProfile" data-id="http://www.linkedin.com/in/navidseyedmatin" data-format="inline" data-related="false"></script>
+</div>
+</div>
+</div>
+</div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-    	<title>Mobile Apps</title>
+<head>
+		<title>Mobile Apps</title>
    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8" />       
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -26,9 +26,9 @@
 
   <link href="/assets/css/master.css" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/jquery.sidr.dark.css">
-    </head>
-  <body>
-  <div class="nav">
+</head>
+<body>
+	<div class="nav">
 		<!--<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -51,13 +51,14 @@
         </div>
 
  
-    </nav>-->
-<nav>
-<div class="masthead clearfix">
-<h3 class="masthead-brand">Navid SeyedMatin\<span id="title"></span> </h3>
+      </nav>-->
+      <nav>
+        <div class="masthead clearfix">
+          <h3 class="masthead-brand visible-md visible-lg">Navid SeyedMatin\<span class="page-title"></span> </h3>
+          <h4 class="masthead-brand visible-sm visible-xs"><span class="page-title"></span></h4>
 
-  <ul class="nav masthead-nav visible-md visible-lg">
-    <li ><a href="/">About</a></li>
+          <ul class="nav masthead-nav visible-md visible-lg">
+            <li ><a href="/">About</a></li>
     <!--
     <li >
     <a href="#" data-toggle="dropdown">
@@ -67,79 +68,81 @@
       <li><a href="/resume/overview">Overview</a></li>
       <li><a href="/resume/detail">Detail</a></li>
     </ul>
-</li>-->
-    <li ><a href="/resume" id="res2">Resume</a></li>
-    <li  class="active"><a href="/apps">Mobile Apps</a></li>
-    <li ><a href="/contact">Contact Me</a></li>
-  </ul>
-  <div class="container">
+  </li>-->
+  <li ><a href="/resume" id="res2">Resume</a></li>
+  <li  class="active"><a href="/apps">Mobile Apps</a></li>
+  <li ><a href="/contact">Contact Me</a></li>
+</ul>
+<div class="container">
   <ul class="nav masthead-nav visible-xs visible-sm text-right">
     <li>
       <a id="responsive-menu-button" href="#sidr-main">
-          <span class="glyphicon glyphicon-list-alt"></span>
-        </a>
+        <span class="glyphicon glyphicon-list-alt"></span>
+      </a>
     </li>
   </ul>
-  </div>
-  </div>
+</div>
+</div>
 </nav>
 
 
 
-		</div >
-  	<div class="site-wrapper" > 	
-	  	<div class="site-wrapper-inner">
-	  		<div class="cover-container">
-		  		<div class="inner cover" style="display:none" id="main-body">
-		  			<div class="mainbody">
-							<div id="sidr-right" class="sidr right">
+	</div >
+	<div class="site-wrapper" > 	
+		<div class="site-wrapper-inner">
+			<div class="cover-container">
+				<div class="inner cover" style="display:none" id="main-body">
+					<div class="mainbody">
+						<div id="sidr-right" class="sidr right">
 							<div class="sidr-inner">
-							  <!-- Your content -->
-							  <ul class="sidr-class-nav sidr-class-navbar-nav">
-							    <li ><a href="/">About</a></li>
-    <!--<li >
-    <a href="#resume-right" data-toggle="dropdown" id="resume-sidr-button">
-      Resume
-    </a>
-</li>-->
-    <li ><a href="/resume">Resume</a></li>
-    <li  class="active"><a href="/apps">Mobile Apps</a></li>
-    <li ><a href="/contact">Contact Me</a></li>
-							  </ul>
-							  </div>
-							</div>
-							<div id="resume-right" class="sidr right">
-							<ul class="sidr-class-nav sidr-class-navbar-nav">
-								<li><a href="/resume/overview">Overview</a></li>
-      							<li><a href="/resume/detail">Detail</a></li>
-      							<li><a href="#sidr-right" id="back-to-nav-button">Back</a>
+								<!-- Your content -->
+								<ul class="sidr-class-nav sidr-class-navbar-nav">
+									<li ><a href="/">About</a></li>
+						    	<!--<li >
+						    		<a href="#resume-right" data-toggle="dropdown" id="resume-sidr-button">
+						      																	Resume
+						    		</a>
+						    	</li>-->
+						    	<li ><a href="/resume">Resume</a></li>
+						    	<li  class="active"><a href="/apps">Mobile Apps</a></li>
+						    	<li ><a href="/contact">Contact Me</a></li>
+						    </ul>
+						</div>
+					</div>
+					<div id="resume-right" class="sidr right">
+						<ul class="sidr-class-nav sidr-class-navbar-nav">
+							<li><a href="/resume/overview">Overview</a></li>
+							<li><a href="/resume/detail">Detail</a></li>
+							<li><a href="#sidr-right" id="back-to-nav-button">Back</a></li>
 							</ul>
-							</div>
-			 			<h1 class="center">Coming Soon!</h1>
-			 		</div>
-			 	</div>
-		 	</div>
-	 	</div>
- 	</div>
- 	<script src="/assets/js/typed.js"></script>
+						</div>
+						<div class="content">
+							<h1 class="center">Coming Soon!</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="/assets/js/typed.js"></script>
 <script src="/assets/js/jquery.sidr.min.js"></script>
 <script>
 $(function(){
-  $('#title').typed({
+  $('.page-title').typed({
     strings: ['Mobile Apps'],
     typeSpeed: 20,
     callback: function() {
  		$('#main-body').fadeIn(1000); 
     }
   });
-  $('#cursor').bind('fade-cycle', function() {
+  $('.cursor').bind('fade-cycle', function() {
       $(this).fadeOut('fast', function() {
           $(this).fadeIn('fast', function() {
               $(this).trigger('fade-cycle');
           });
       });
   });
-  $('#cursor').each(function(index, elem) {
+  $('.cursor').each(function(index, elem) {
       setTimeout(function() {
           $(elem).trigger('fade-cycle');
       }, index * 250);
@@ -165,4 +168,4 @@ $(function(){
 </script>
 
 
-</html>
+	</html>

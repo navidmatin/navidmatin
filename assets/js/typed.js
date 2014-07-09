@@ -99,7 +99,7 @@
 
             , build: function(){
                 // Insert cursor
-                this.el.after("<span id=\"cursor\">_</span>");
+                this.el.after("<span class=\"cursor\">_</span>");
                 this.init();
             }
 
