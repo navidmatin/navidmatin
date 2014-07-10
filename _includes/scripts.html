@@ -1,6 +1,6 @@
-<script src="/assets/js/typed.js"></script>
-<script src="/assets/js/jquery.sidr.min.js"></script>
-<script>
+<script src="/assets/js/typed.js" type="text/JavaScript"></script>
+<script src="/assets/js/jquery.sidr.min.js" type="text/JavaScript"></script>
+<script type="text/JavaScript">
 $(function(){
   $('.page-title').typed({
     strings: ['{{ page.title }}'],
@@ -40,12 +40,15 @@ $(function(){
 
 })
 </script>
+{% if page.slug == "resume" %}
+<script src="/assets/js/resume.js"></script>
+{% endif %}
 {% if page.slug == "resume/overview" %}
-<script>window.jQuery || document.write('<script src="//code.jquery.com/jquery-1.11.0.min.js"><\/script>')</script>
-<script src="/assets/js/imagesloaded.js"></script>
-<script src="/assets/js/skrollr.js"></script>
-<script src="/assets/js/mainparallax.js"></script>
-<script>
+<script type="text/JavaScript">window.jQuery || document.write('<script src="//code.jquery.com/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="/assets/js/imagesloaded.js" type="text/JavaScript"></script>
+<script src="/assets/js/skrollr.js" type="text/JavaScript"></script>
+<script src="/assets/js/mainparallax.js" type="text/JavaScript"></script>
+<script type="text/JavaScript">
   $(window).load(function(){
     $('#loading').hide();
   });
