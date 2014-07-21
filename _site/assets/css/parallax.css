@@ -154,7 +154,8 @@ main {
 #slide-2 .bcg {background: none; background-color: #010101; height: 310px; text-align: center}
 
 /* Slide 3 */
-#slide-3 .bcg {background-image:url('../img/bcg_slide-3.jpg')}
+#slide-3 .bcg {background-image:url('../img/bcg_slide-1.jpg')}
+/*#slide-3 .bcg {background-image:url('../img/bcg_slide-3.jpg')}*/
 
 
 /* Slide 4 */
