@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>CSE 5912</title>
+   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" /> 
+    <!--[if lt IE 9]>
+            <script src="/assets/js/html5shiv.js"></script>
+            <script src="/assets/js/respond.min.js"></script>
+        <![endif]-->
+        
+      
+    <script src="//code.jquery.com/jquery-1.11.0.min.js" type="text/JavaScript"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js" type="text/JavaScript"></script>
+    <!-- Latest compiled and minified CSS -->
+      
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+
+	<!-- Latest compiled and minified JavaScript -->	
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js" type="text/JavaScript"></script>
+
+
+
+  <link href="/assets/css/master.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/jquery.sidr.dark.css">
+</head>
+<body>
+	<div class="nav">
+		<!--[if lt IE 9]><nav>
+        <div class="masthead clearfix  container">
+          <h3 class="masthead-brand">Navid SeyedMatin\<span class="page-title"></span> </h3>
+
+          <ul class="nav masthead-nav text-right">
+            <li ><a href="/">About</a></li>
+            <li ><a href="/resume" id="res2">Resume</a></li>
+            <li ><a href="/apps">Mobile Apps</a></li>
+            <li ><a href="/contact">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav><![endif]-->
+      <nav>
+        <div class="masthead clearfix">
+          <h3 class="masthead-brand visible-md visible-lg">Navid SeyedMatin\<span class="page-title"></span> </h3>
+          <h4 class="masthead-brand visible-sm visible-xs"><span class="page-title"></span></h4>
+
+          <ul class="nav masthead-nav visible-sm visible-md visible-lg">
+            <li ><a href="/">About</a></li>
+            <li ><a href="/resume" id="res2">Resume</a></li>
+            <li ><a href="/apps">Mobile Apps</a></li>
+            <li ><a href="/contact">Contact Me</a></li>
+          </ul>
+          <div class="container">
+            <ul class="nav masthead-nav visible-xs text-right">
+              <li>
+                <a id="responsive-menu-button" class="navbar-toggle" href="#sidr-main">
+                  <span class="glyphicon glyphicon glyphicon-th-list btn-lg"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
+	</div >
+	<div class="site-wrapper" > 	
+		<div class="site-wrapper-inner">
+			<div class="cover-container">
+				<div class="inner cover" style="display:none" id="main-body">
+					<div class="mainbody">
+						<div id="sidr-right" class="sidr right">
+							<div class="sidr-inner">
+								<!-- Your content -->
+								<ul class="sidr-class-nav sidr-class-navbar-nav">
+									<li ><a href="/">About</a></li>
+						    	<!--<li >
+						    		<a href="#resume-right" data-toggle="dropdown" id="resume-sidr-button">
+						      																	Resume
+						    		</a>
+						    	</li>-->
+						    	<li ><a href="/resume">Resume</a></li>
+						    	<li ><a href="/apps">Mobile Apps</a></li>
+						    	<li ><a href="/contact">Contact Me</a></li>
+						    </ul>
+						</div>
+					</div>
+					<div id="resume-right" class="sidr right">
+						<ul class="sidr-class-nav sidr-class-navbar-nav">
+							<li><a href="/resume/overview">Overview</a></li>
+							<li><a href="/resume/detail">Detail</a></li>
+							<li><a href="#sidr-right" id="back-to-nav-button">Back</a></li>
+							</ul>
+						</div>
+						<div class="content">
+							<h1 class="text-center">Credit Screen</h1>
+<div class="row">
+<div class="col-sm-10"></div>
+<div class="col-sm-2">
+	<img src="https://brand.osu.edu/assets/image-cache/uploads/logo-seal.26b86f30.jpg" style="width: 100px">
+</div>
+</div>
+<hr />
+<div class="media">
+  <a class="pull-left" href="/">
+    <img class="media-object" src="/assets/img/navid.png" alt="navid" width="100px">
+  </a>
+  <div class="media-body">
+    <h4 class="media-heading">Navid SeyedMatin: Software Developer and Game Design</h4>
+    <p> <strong>Bio: </strong>Navid is a software developer, and has experience in Web app and mobile app development. He also have experience in Unity 3d framework and is currently creating a great game</p>
+	<p><strong>Favorite Game: </strong> <a href="http://www.totalwar.com/en_us/">Total War Series</a> - <a href="http://www.elderscrolls.com/">The Elder Scrolls Series</a>
+  </div>
+</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="/assets/js/typed.js" type="text/JavaScript"></script>
+<script src="/assets/js/jquery.sidr.min.js" type="text/JavaScript"></script>
+<script type="text/JavaScript">
+$(function(){
+  $('.page-title').typed({
+    strings: ['CSE 5912'],
+    typeSpeed: 20,
+    callback: function() {
+ 		$('#main-body').fadeIn(1000); 
+    }
+  });
+  $('.cursor').bind('fade-cycle', function() {
+      $(this).fadeOut('fast', function() {
+          $(this).fadeIn('fast', function() {
+              $(this).trigger('fade-cycle');
+          });
+      });
+  });
+  $('.cursor').each(function(index, elem) {
+      setTimeout(function() {
+          $(elem).trigger('fade-cycle');
+      }, index * 250);
+  });
+  $('#responsive-menu-button').sidr({
+      name: 'sidr-right',
+      side: 'right'
+    });
+   $('#resume-sidr-button').sidr({
+      name: 'resume-right',
+      side: 'right'
+    });
+   $('#back-to-nav-button').sidr({
+      name: 'sidr-right',
+      side: 'right'
+    });
+  $(window).resize(function () { $.sidr('close', 'sidr-right'); });
+          $("body").click(function(){
+               $.sidr('close', 'sidr-right');
+          });
+
+})
+</script>
+
+
+
+	</html>
