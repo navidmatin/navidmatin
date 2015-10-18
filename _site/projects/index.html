@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-		<title>Home</title>
+		<title>Projects</title>
    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8" /> 
     <!--[if lt IE 9]>
@@ -44,7 +44,7 @@
           <h3 class="masthead-brand">Navid SeyedMatin\<span class="page-title"></span> </h3>
 
           <ul class="nav masthead-nav text-right">
-            <li  class="active"><a href="/">About</a></li>
+            <li ><a href="/">About</a></li>
             <li ><a href="/resume" id="res2">Resume</a></li>
             <li ><a href="/apps">Mobile Apps</a></li>
             <li ><a href="/contact">Contact Me</a></li>
@@ -57,8 +57,8 @@
           <h4 class="masthead-brand visible-sm visible-xs"><span class="page-title"></span></h4>
 
           <ul class="nav masthead-nav visible-sm visible-md visible-lg">
-            <li  class="active"><a href="/">About</a></li>
-            <li ><a href="/projects" id="res2">Projects</a></li>
+            <li ><a href="/">About</a></li>
+            <li  class="active"><a href="/projects" id="res2">Projects</a></li>
             <li ><a href="/apps">Mobile Apps</a></li>
             <li ><a href="/contact">Contact Me</a></li>
           </ul>
@@ -86,7 +86,7 @@
 							<div class="sidr-inner">
 								<!-- Your content -->
 								<ul class="sidr-class-nav sidr-class-navbar-nav">
-									<li  class="active"><a href="/">About</a></li>
+									<li ><a href="/">About</a></li>
 						    	<!--<li >
 						    		<a href="#resume-right" data-toggle="dropdown" id="resume-sidr-button">
 						      																	Resume
@@ -106,10 +106,29 @@
 							</ul>
 						</div>
 						<div class="content">
-							<div class="text-center">
-<h1>Welcome!
-<br />
-<small>I am a Software Developer interested in Video Games, Web and Mobile applications, and making things easy by coding...</a></small></h1>
+							<div class="row">
+  <div class="col-md-7">
+    <h2>Buckeye Builder <span class="text-muted">Android App</span></h2>
+    <p class="lead">Buckeye Builder is a GPS-based game with goal of building the whole Ohio State Campus. 
+      Buckeye Builder is a fun way to explore Ohio State Campus and advance the game.
+      Your task is to build the whole campus, and in order to do that you need money. In order to gain money and build buildings you have to physically go the building's location on campus and build the building. <br/><a href="https://play.google.com/store/apps/details?id=com.infinityloop.buckeyebuilder">
+      <img alt="Get it on Google Play"
+      src="/assets/img/en_generic_rgb_wo_45.png" /></a>
+    </p>
+  </div>
+  <div class="col-md-5"><a href="https://play.google.com/store/apps/details?id=com.infinityloop.buckeyebuilder">
+    <img class="img-responsive center-block" src="/assets/img/buckeyebuilder_logo.png" height="300" width="300" /></a>
+  </div> 
+</div>
+<hr/>
+<div class="row">
+  <div class="col-md-7 col-md-push-5">
+    <h2>Worlds Apart <span class="text-muted">Goofy Ghost Studios <small>(Sutro Games)</small></span></h2>
+    <p class="lead">Started as a game jam project, world's apart is a survival game that juxtaposes the realities of life in different parts of the world </p>
+  </div>
+  <div class="col-md-5 col-md-pull-7">
+    <iframe width="400" height="300" src="https://www.youtube.com/embed/mOyXqIsM1do" frameborder="1" allowfullscreen></iframe>
+  </div>
 </div>
 
 						</div>
@@ -123,7 +142,7 @@
 <script type="text/JavaScript">
 $(function(){
   $('.page-title').typed({
-    strings: ['Home'],
+    strings: ['Projects'],
     typeSpeed: 20,
     callback: function() {
  		$('#main-body').fadeIn(1000); 
