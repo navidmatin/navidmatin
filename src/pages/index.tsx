@@ -1,21 +1,59 @@
-import { Box } from "@mui/material";
+import { Box, Grid, IconButton, Stack, Link, Typography } from "@mui/material";
 import Layout from "../components/layout";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faLinkedin,
+  faStackOverflow,
+} from "@fortawesome/free-brands-svg-icons";
+import HoverableIcon from "@/components/HoverableIcon";
 
 export default function Home() {
   return (
     <>
       <Layout>
-        <p>Test</p>
-        <Box sx={{ my: 2 }}>
-          {[...new Array(360)]
-            .map(
-              () => `Cras mattis consectetur purus sit amet fermentum.
-Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`
-            )
-            .join("\n")}
-        </Box>
+        <Grid
+          container
+          spacing={3}
+          direction="column"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <Grid item />
+          <Grid item>
+            <Typography variant="h4">Welcome! You can reach me at:</Typography>
+          </Grid>
+          <Grid item />
+          <Grid item direction="row">
+            <Grid container spacing={3}>
+              <Grid item>
+                <Link href="https://github.com/navidmatin" color="inherit">
+                  <HoverableIcon icon={faGithub} action="bounce" size="4x" />
+                </Link>
+              </Grid>
+              <Grid item>
+                <Link
+                  href="https://www.linkedin.com/in/navidseyedmatin/"
+                  color="inherit"
+                >
+                  <HoverableIcon icon={faLinkedin} action="bounce" size="4x" />
+                </Link>
+              </Grid>
+              <Grid item>
+                <Link
+                  href="https://stackoverflow.com/users/1760055/navidm"
+                  color="inherit"
+                >
+                  <HoverableIcon
+                    icon={faStackOverflow}
+                    action="bounce"
+                    size="4x"
+                  />
+                </Link>
+              </Grid>
+            </Grid>
+          </Grid>
+        </Grid>
       </Layout>
     </>
   );

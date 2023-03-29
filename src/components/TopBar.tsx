@@ -1,4 +1,4 @@
-import { AppBar, Grid, Toolbar, Typography } from "@mui/material";
+import { AppBar, Button, Grid, Toolbar, Typography } from "@mui/material";
 import { Container } from "@mui/system";
 import React, { ReactNode } from "react";
 import DarkModeButton from "./DarkModeButton";
@@ -14,6 +14,7 @@ export default function TopBar() {
             <Grid container>
               <Grid item xs={11}>
                 <TopBarTitle />
+                <Button />
               </Grid>
               <Grid item xs={1}>
                 <DarkModeButton />

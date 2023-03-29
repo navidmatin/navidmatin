@@ -7,6 +7,7 @@ import {
 import type { AppProps } from "next/app";
 import { useMemo, useState } from "react";
 import React from "react";
+import "../styles/globals.css";
 
 export const ColorModeContext = React.createContext({
   toggleColorMode: (mode: "light" | "dark") => {},
