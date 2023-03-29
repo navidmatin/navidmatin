@@ -16,11 +16,17 @@ export default function HoverableIcon({
   color?: string | any;
 }) {
   const [isHovering, setHover] = useState<boolean>(false);
+  const [timer, setTimer] = useState<NodeJS.Timeout | null>(null);
+
   const onMouseEnter = useCallback(() => {
+    if (timer) clearTimeout(timer);
     setHover(true);
   }, []);
   const onMouseExit = useCallback((event: MouseEvent<SVGSVGElement>) => {
-    setHover(false);
+    const newTimer = setTimeout(() => {
+      setHover(false);
+    }, 250);
+    setTimer(newTimer);
   }, []);
   return (
     <FontAwesomeIcon

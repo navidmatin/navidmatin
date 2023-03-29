@@ -38,14 +38,18 @@ export default function TopBarTitle() {
     let lastUrl = "/";
 
     links.push(
-      <Grid item>
+      <Grid item key="name">
         <Link key="name" href="/" className="link-hover">
           {breadCrumbSection("Navid S. Matin")}
         </Link>
       </Grid>
     );
     for (let i = 0; i < sections.length; i++) {
-      links.push(<Grid item>{breadCrumbSection(`\\`)}</Grid>);
+      links.push(
+        <Grid item key={`\\${i}`}>
+          {breadCrumbSection(`\\`)}
+        </Grid>
+      );
       const capitalizedSection =
         sections[i].charAt(0).toUpperCase() + sections[i].slice(1);
       lastUrl += sections[i] + "/";

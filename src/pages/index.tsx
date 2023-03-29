@@ -24,7 +24,7 @@ export default function Home() {
             <Typography variant="h4">Welcome! You can reach me at:</Typography>
           </Grid>
           <Grid item />
-          <Grid item direction="row">
+          <Grid item>
             <Grid container spacing={3}>
               <Grid item>
                 <Link href="https://github.com/navidmatin" color="inherit">
